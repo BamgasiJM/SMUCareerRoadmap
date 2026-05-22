@@ -1,0 +1,120 @@
+.wrapper {
+  background-color: var(--bg-section);
+  border-bottom: 1px solid var(--border-default);
+  padding: var(--space-lg) 0;
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+/* --- 검색 --- */
+.searchBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 480px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: var(--space-md);
+  color: var(--text-muted);
+  font-size: var(--text-md);
+  pointer-events: none;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.625rem var(--space-2xl) 0.625rem 2.5rem;
+  border: 1px solid var(--border-default);
+  border-radius: 4px;
+  font-family: var(--font-base);
+  font-size: var(--text-md);
+  color: var(--text-primary);
+  background-color: var(--color-white);
+  transition: border-color var(--transition-fast);
+  outline: none;
+}
+
+.searchInput:focus {
+  border-color: var(--color-blue);
+}
+
+.clearBtn {
+  position: absolute;
+  right: var(--space-md);
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+  transition: color var(--transition-fast);
+}
+
+.clearBtn:hover {
+  color: var(--text-primary);
+}
+
+/* --- 필터 버튼 --- */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.filterBtn {
+  padding: 0.375rem var(--space-md);
+  border: 1px solid var(--border-default);
+  border-radius: 4px;
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--text-secondary);
+  background-color: var(--color-white);
+  transition: all var(--transition-fast);
+}
+
+.filterBtn:hover {
+  border-color: var(--color-gray-400);
+  color: var(--text-primary);
+}
+
+/* 활성 상태 */
+.filterActive {
+  background-color: var(--color-black) !important;
+  border-color: var(--color-black) !important;
+  color: var(--color-white) !important;
+}
+
+/* 단과대별 hover 컬러 */
+.tagHumanities:not(.filterActive):hover { border-color: var(--college-humanities); color: var(--college-humanities); }
+.tagSocial:not(.filterActive):hover     { border-color: var(--college-social);     color: var(--college-social);     }
+.tagAi:not(.filterActive):hover         { border-color: var(--college-ai);         color: var(--college-ai);         }
+.tagHealth:not(.filterActive):hover     { border-color: var(--college-health);     color: var(--college-health);     }
+
+/* --- 메타 정보 --- */
+.meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.count {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+
+.resetBtn {
+  font-size: var(--text-sm);
+  color: var(--text-link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+@media (max-width: 767px) {
+  .searchBox {
+    max-width: 100%;
+  }
+}

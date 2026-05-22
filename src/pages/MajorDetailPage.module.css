@@ -1,0 +1,283 @@
+.page {
+  background-color: var(--bg-page);
+  min-height: 100vh;
+  padding: var(--space-xl) 0 var(--space-2xl);
+}
+
+.inner {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+/* --- 뒤로가기 --- */
+.backBtn {
+  font-size: var(--text-sm);
+  color: var(--text-link);
+  font-weight: var(--font-medium);
+  align-self: flex-start;
+  transition: opacity var(--transition-fast);
+}
+
+.backBtn:hover { opacity: 0.7; }
+
+/* --- 헤딩 --- */
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding-bottom: var(--space-lg);
+  border-bottom: 2px solid var(--color-black);
+}
+
+.collegeLabel {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  font-weight: var(--font-medium);
+}
+
+.majorName {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-bold);
+  line-height: var(--leading-tight);
+}
+
+.overview {
+  font-size: var(--text-md);
+  color: var(--text-secondary);
+  line-height: var(--leading-base);
+  margin-top: var(--space-xs);
+}
+
+/* --- 연락처 --- */
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  background-color: var(--bg-section);
+  padding: var(--space-md) var(--space-lg);
+  border-radius: var(--card-radius);
+}
+
+/* --- 섹션 공통 --- */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.sectionTitle {
+  font-size: var(--text-lg);
+  font-weight: var(--font-bold);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--border-default);
+}
+
+.note {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+
+/* --- 졸업요건 그리드 --- */
+.creditGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1px;
+  border: 1px solid var(--border-default);
+  border-radius: var(--card-radius);
+  overflow: hidden;
+}
+
+.creditItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-md);
+  background-color: var(--bg-card);
+  gap: var(--space-xs);
+}
+
+.creditItem:first-child {
+  background-color: var(--color-black);
+}
+
+.creditItem:first-child .creditLabel,
+.creditItem:first-child .creditValue {
+  color: var(--color-white);
+}
+
+.creditItem:first-child .creditValue {
+  font-size: var(--text-xl);
+}
+
+.creditLabel {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.creditValue {
+  font-size: var(--text-lg);
+  font-weight: var(--font-bold);
+  color: var(--text-primary);
+}
+
+/* --- 이수체계 --- */
+.courseTable {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.courseRow {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: var(--space-md);
+  align-items: start;
+}
+
+.courseYear {
+  font-size: var(--text-sm);
+  font-weight: var(--font-bold);
+  color: var(--text-muted);
+  padding-top: var(--space-xs);
+}
+
+.courseSems {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+.courseSem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.semLabel {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  font-weight: var(--font-medium);
+}
+
+.courseList {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.courseChip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px;
+  border: 1px solid var(--border-default);
+  border-radius: 4px;
+  font-size: var(--text-sm);
+  background-color: var(--bg-card);
+}
+
+.courseChip.required {
+  border-color: var(--color-blue);
+  background-color: #f0f4fc;
+}
+
+.chipCredits {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  flex-shrink: 0;
+  margin-left: var(--space-sm);
+}
+
+.empty {
+  font-size: var(--text-sm);
+  color: var(--color-gray-200);
+}
+
+.legend {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+}
+
+.legendDot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  border: 1px solid var(--border-default);
+  background-color: var(--bg-card);
+}
+
+.legendDot.required {
+  border-color: var(--color-blue);
+  background-color: #f0f4fc;
+}
+
+/* --- 진출 분야 --- */
+.careerList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.careerChip {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  background-color: var(--bg-section);
+  border: 1px solid var(--border-default);
+  border-radius: 4px;
+  padding: 6px 14px;
+}
+
+/* --- 전과 안내 --- */
+.transferNote {
+  font-size: var(--text-md);
+  color: var(--text-secondary);
+  line-height: var(--leading-base);
+  background-color: var(--bg-section);
+  padding: var(--space-md) var(--space-lg);
+  border-left: 3px solid var(--accent-teal);
+  border-radius: 0 var(--card-radius) var(--card-radius) 0;
+}
+
+/* --- 상태 --- */
+.status {
+  padding: var(--space-2xl);
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.notFound {
+  max-width: 860px;
+  margin: var(--space-2xl) auto;
+  padding: var(--space-2xl) var(--gutter);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-lg);
+  color: var(--text-muted);
+}
+
+/* --- 반응형 --- */
+@media (max-width: 767px) {
+  .creditGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .courseRow {
+    grid-template-columns: 50px 1fr;
+  }
+
+  .courseSems {
+    grid-template-columns: 1fr;
+  }
+}

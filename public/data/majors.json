@@ -1,0 +1,255 @@
+{
+  "colleges": [
+    { "id": "humanities", "name": "인문예술대학",   "nameEn": "College of Humanities & Arts" },
+    { "id": "social",     "name": "사회과학대학",   "nameEn": "College of Social Sciences" },
+    { "id": "ai",         "name": "AI융합대학",     "nameEn": "College of AI Convergence" },
+    { "id": "health",     "name": "보건바이오대학", "nameEn": "College of Health & Bio" }
+  ],
+  "majors": [
+    {
+      "id": "media-content",
+      "collegeId": "humanities",
+      "name": "미디어콘텐츠창작학과",
+      "totalCredits": 130,
+      "tags": ["창작", "미디어", "콘텐츠"]
+    },
+    {
+      "id": "foreign-languages",
+      "collegeId": "humanities",
+      "name": "외국어학부",
+      "totalCredits": 130,
+      "tags": ["어학", "국제", "외국어"]
+    },
+    {
+      "id": "art-industrial-design",
+      "collegeId": "humanities",
+      "name": "아트&산업디자인학과",
+      "totalCredits": 130,
+      "tags": ["디자인", "예술", "산업"]
+    },
+    {
+      "id": "interior-design",
+      "collegeId": "humanities",
+      "name": "실내디자인학과",
+      "totalCredits": 130,
+      "tags": ["디자인", "공간", "인테리어"]
+    },
+    {
+      "id": "visual-design",
+      "collegeId": "humanities",
+      "name": "시각영상디자인학과",
+      "totalCredits": 130,
+      "tags": ["디자인", "영상", "시각"]
+    },
+    {
+      "id": "fashion-design",
+      "collegeId": "humanities",
+      "name": "패션디자인학과",
+      "totalCredits": 130,
+      "tags": ["디자인", "패션", "의류"]
+    },
+    {
+      "id": "performing-arts",
+      "collegeId": "humanities",
+      "name": "공연예술학과",
+      "totalCredits": 130,
+      "tags": ["예술", "공연", "연기"]
+    },
+    {
+      "id": "film-webtoon-animation",
+      "collegeId": "humanities",
+      "name": "영화웹툰애니메이션학과",
+      "totalCredits": 130,
+      "tags": ["영화", "웹툰", "애니메이션"]
+    },
+    {
+      "id": "police",
+      "collegeId": "social",
+      "name": "경찰학과",
+      "totalCredits": 130,
+      "tags": ["공무원", "법집행", "사회안전"]
+    },
+    {
+      "id": "law",
+      "collegeId": "social",
+      "name": "법학과",
+      "totalCredits": 130,
+      "tags": ["법률", "공무원", "법조"]
+    },
+    {
+      "id": "real-estate",
+      "collegeId": "social",
+      "name": "부동산지적학과",
+      "totalCredits": 130,
+      "tags": ["부동산", "지적", "공간정보"]
+    },
+    {
+      "id": "fire-disaster",
+      "collegeId": "social",
+      "name": "소방방재학과",
+      "totalCredits": 130,
+      "tags": ["소방", "방재", "공무원"]
+    },
+    {
+      "id": "business",
+      "collegeId": "social",
+      "name": "경영학과",
+      "totalCredits": 130,
+      "tags": ["경영", "취업률상위", "비즈니스"]
+    },
+    {
+      "id": "accounting-tax-finance",
+      "collegeId": "social",
+      "name": "회계세무금융학과",
+      "totalCredits": 130,
+      "tags": ["회계", "세무", "금융"]
+    },
+    {
+      "id": "hotel-management",
+      "collegeId": "social",
+      "name": "호텔경영학과",
+      "totalCredits": 130,
+      "tags": ["호텔", "서비스", "관광"]
+    },
+    {
+      "id": "aviation-service",
+      "collegeId": "social",
+      "name": "항공서비스학과",
+      "totalCredits": 130,
+      "tags": ["항공", "서비스", "승무원"]
+    },
+    {
+      "id": "advertising-pr",
+      "collegeId": "social",
+      "name": "광고홍보학과",
+      "totalCredits": 130,
+      "tags": ["광고", "홍보", "미디어"]
+    },
+    {
+      "id": "social-welfare",
+      "collegeId": "social",
+      "name": "사회복지학과",
+      "totalCredits": 130,
+      "tags": ["복지", "상담", "사회서비스"]
+    },
+    {
+      "id": "counseling-psychology",
+      "collegeId": "social",
+      "name": "상담심리학과",
+      "totalCredits": 130,
+      "tags": ["심리", "상담", "복지"]
+    },
+    {
+      "id": "ai-computer",
+      "collegeId": "ai",
+      "name": "AI컴퓨터학부",
+      "totalCredits": 130,
+      "tags": ["AI", "컴퓨터", "취업률상위"]
+    },
+    {
+      "id": "smart-it",
+      "collegeId": "ai",
+      "name": "스마트IT학부",
+      "totalCredits": 130,
+      "tags": ["IT", "스마트", "융합"]
+    },
+    {
+      "id": "electrical-electronics",
+      "collegeId": "ai",
+      "name": "전기전자공학과",
+      "totalCredits": 130,
+      "tags": ["전기", "전자", "공학"]
+    },
+    {
+      "id": "architecture",
+      "collegeId": "ai",
+      "name": "건축학과",
+      "totalCredits": 135,
+      "tags": ["건축", "설계", "5년제"]
+    },
+    {
+      "id": "disaster-safety",
+      "collegeId": "ai",
+      "name": "재난안전학과",
+      "totalCredits": 130,
+      "tags": ["안전", "재난", "공무원"]
+    },
+    {
+      "id": "health-safety-engineering",
+      "collegeId": "ai",
+      "name": "보건안전공학과",
+      "totalCredits": 130,
+      "tags": ["보건", "안전", "공학"]
+    },
+    {
+      "id": "nursing",
+      "collegeId": "health",
+      "name": "간호학과",
+      "totalCredits": 140,
+      "tags": ["의료", "취업률상위", "국가고시"]
+    },
+    {
+      "id": "occupational-therapy",
+      "collegeId": "health",
+      "name": "작업치료학과",
+      "totalCredits": 130,
+      "tags": ["의료", "치료", "국가고시"]
+    },
+    {
+      "id": "clinical-pathology",
+      "collegeId": "health",
+      "name": "임상병리학과",
+      "totalCredits": 130,
+      "tags": ["의료", "병리", "국가고시"]
+    },
+    {
+      "id": "bio-pharma",
+      "collegeId": "health",
+      "name": "바이오제약산업학부",
+      "totalCredits": 130,
+      "tags": ["제약", "바이오", "산업"]
+    },
+    {
+      "id": "bio-cosmetics",
+      "collegeId": "health",
+      "name": "바이오코스메틱학과",
+      "totalCredits": 130,
+      "tags": ["화장품", "바이오", "뷰티"]
+    },
+    {
+      "id": "beauty-care",
+      "collegeId": "health",
+      "name": "뷰티케어학과",
+      "totalCredits": 130,
+      "tags": ["뷰티", "미용", "케어"]
+    },
+    {
+      "id": "bio-food-nutrition",
+      "collegeId": "health",
+      "name": "바이오식품영양학부",
+      "totalCredits": 130,
+      "tags": ["식품", "영양", "바이오"]
+    },
+    {
+      "id": "animal-health",
+      "collegeId": "health",
+      "name": "동물보건학과",
+      "totalCredits": 130,
+      "tags": ["동물", "보건", "국가고시"]
+    },
+    {
+      "id": "companion-animal",
+      "collegeId": "health",
+      "name": "반려동물산업학과",
+      "totalCredits": 130,
+      "tags": ["반려동물", "산업", "케어"]
+    },
+    {
+      "id": "physical-education",
+      "collegeId": "health",
+      "name": "생활체육학과",
+      "totalCredits": 130,
+      "tags": ["체육", "스포츠", "건강"]
+    }
+  ]
+}
