@@ -5,7 +5,7 @@ import MajorDetailPage from './pages/MajorDetailPage'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
