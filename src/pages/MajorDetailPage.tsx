@@ -2,6 +2,7 @@ import { useParams, useNavigate } from 'react-router-dom'
 import { useQuery } from '@tanstack/react-query'
 import { fetchMajors, fetchMajorDetail } from '../api/majors'
 import type { RequiredCourse } from '../types'
+import GraduationCalculator from '../components/GraduationCalculator/GraduationCalculator'
 import styles from './MajorDetailPage.module.css'
 
 // 학년/학기별로 그룹핑
@@ -107,6 +108,12 @@ export default function MajorDetailPage() {
             </div>
           </div>
           {g.note && <p className={styles.note}>※ {g.note}</p>}
+        </section>
+
+        {/* 필요학점 계산기 */}
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>필요학점 계산기</h2>
+          <GraduationCalculator graduation={g} />
         </section>
 
         {/* 이수체계 */}
