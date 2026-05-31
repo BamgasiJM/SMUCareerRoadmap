@@ -50,9 +50,9 @@ export default function GraduationCalculator({ graduation }: GraduationCalculato
     () => [
       { key: 'majorRequired', label: '전공필수', required: graduation.majorRequired },
       { key: 'majorElective', label: '전공선택', required: graduation.majorElective },
-      { key: 'generalRequired', label: '교양필수', required: graduation.generalRequired },
-      { key: 'generalElective', label: '교양선택', required: graduation.generalElective },
-      { key: 'free', label: '자유학점', required: freeRequired },
+      { key: 'generalRequired', label: '기초교양', required: graduation.generalRequired },
+      { key: 'generalElective', label: '경험교양', required: graduation.generalElective },
+      { key: 'free', label: '일반선택', required: freeRequired },
     ],
     [graduation, freeRequired],
   )
@@ -158,7 +158,7 @@ export default function GraduationCalculator({ graduation }: GraduationCalculato
       </div>
 
       <p className={styles.note}>
-        ※ 카테고리 초과 이수분도 총 이수학점에는 합산되어 자유학점으로 계산됩니다.
+        ※ 전과시 새로운 학과의 전공필수로 인정받지 못하는 수업은 일반선택으로 인정됩니다.
       </p>
     </div>
   )
